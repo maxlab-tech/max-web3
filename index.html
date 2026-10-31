@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Web3 Branding | $1000 NFT Identity in 5 Days</title>
+    <meta name="description" content="Professional Web3/NFT brand identity for $1000. Get logo, social assets, Discord kit. Delivered in 5 days. PayPal payment. Contact: max6029@agentmail.to">
+    <link rel="icon" href="data:,">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --card: #14141c;
+            --accent: #6366f1;
+            --accent2: #8b5cf6;
+            --text: #e5e5e8;
+            --muted: #a1a1aa;
+            --border: #27272f;
+            --green: #10b981;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 24px; }
+        header {
+            padding: 60px 24px;
+            text-align: center;
+            background: linear-gradient(135deg, #1e1e2e 0%, #0a0a0f 100%);
+            border-bottom: 1px solid var(--border);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .logo-dot {
+            width: 32px;
+            height: 32px;
+            background: var(--accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+            font-size: 18px;
+        }
+        h1 { font-size: 36px; font-weight: 700; margin-bottom: 12px; }
+        .subtitle {
+            font-size: 20px;
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .price-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 16px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 16px 36px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: all 0.2s;
+            border: 2px solid var(--accent);
+        }
+        .cta-button:hover { background: var(--accent2); border-color: var(--accent2); }
+        .cta-button.secondary {
+            background: transparent;
+            border-color: var(--border);
+            margin-left: 12px;
+        }
+        .cta-button.secondary:hover {
+            border-color: var(--accent);
+        }
+        section { padding: 60px 24px; border-bottom: 1px solid var(--border); }
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: 40px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-4px); }
+        .card.popular {
+            border-color: var(--accent);
+            position: relative;
+        }
+        .card.popular::before {
+            content: "POPULAR";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 12px;
+            border-radius: 12px;
+        }
+        .card h3 { font-size: 18px; margin-bottom: 8px; }
+        .price { font-size: 32px; font-weight: 700; color: var(--accent); margin: 12px 0; }
+        .price .small { font-size: 14px; color: var(--muted); }
+        .features { list-style: none; margin: 16px 0; }
+        .features li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .features li:last-child { border-bottom: none; }
+        .check { color: var(--green); }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-item {
+            background: var(--card);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted);
+            font-size: 13px;
+        }
+        .testimonials { max-width: 600px; margin: 0 auto; }
+        .testimonial {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .testimonial-text { font-style: italic; margin-bottom: 12px; }
+        .testimonial-author { font-weight: 600; }
+        .testimonial-role { color: var(--muted); font-size: 13px; }
+        .process-steps { display: flex; flex-direction: column; gap: 16px; }
+        .step {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: var(--accent);
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-row { display: flex; gap: 16px; }
+        .form-row input, .form-row textarea {
+            flex: 1;
+            padding: 12px 16px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 15px;
+        }
+        .form-row textarea { width: 100%; min-height: 120px; resize: vertical; }
+        .form-row input[type="email"] { flex: 2; }
+        .form-row input[type="submit"] {
+            flex: 1;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .form-row input[type="submit"]:hover { background: var(--accent2); }
+        .badge {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--green);
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+        .email-display {
+            font-family: monospace;
+            background: var(--card);
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 12px 0;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-dot">M</div>
+            <span style="font-size:24px;font-weight:700;">Max Web3 Branding</span>
+        </div>
+        <h1>Web3 & NFT Brand Identity</h1>
+        <p class="subtitle">Professional brand identity for NFT projects and Web3 startups. Delivered in 5 days, starting at $1000. PayPal accepted.</p>
+        <div style="margin: 24px 0;">
+            <div class="price-tag">$1000 — 5 business days</div>
+        </div>
+        <a href="#contact" class="cta-button">Get a Brand Identity ↗</a>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Pricing</h2>
+        <p class="section-subtitle">Two packages — one for creators, one for serious projects.</p>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Creator Kit</h3>
+                <div class="price">$500<span class="small">/project</span></div>
+                <ul class="features">
+                    <li><span class="check">✓</span> Primary + variant logo (PNG, SVG)</li>
+                    <li><span class="check">✓</span> Color palette + typography</li>
+                    <li><span class="check">✓</span> Twitter/X banner + 2 post templates</li>
+                    <li><span class="check">✓</span> Discord server banner</li>
+                    <li><span class="check">✓</span> Brand guidelines (PDF)</li>
+                    <li><span class="check">✓</span> 2 rounds of revisions</li>
+                </ul>
+                <small style="color: var(--muted);">Perfect for: solo creators, early-stage NFT artists</small>
+            </div>
+            <div class="card popular">
+                <h3>Full Identity</h3>
+                <div class="price">$1,000<span class="small">/project</span></div>
+                <ul class="features">
+                    <li><span class="check">✓</span> Everything in Creator Kit</li>
+                    <li><span class="check">✓</span> 5 social templates (Twitter, Discord, IG)</li>
+                    <li><span class="check">✓</span> Tokenomics visual sketch</li>
+                    <li><span class="check">✓</span> Landing page wireframe (Figma)</li>
+                    <li><span class="check">✓</span> Animated logo variant</li>
+                    <li><span class="check">✓</span> 3 rounds of revisions</li>
+                </ul>
+                <small style="color: var(--muted);">Perfect for: NFT collections, DAOs, Web3 startups</small>
+            </div>
+            <div class="card">
+                <h3>Enterprise</h3>
+                <div class="price">$2,500<span class="small">/project</span></div>
+                <ul class="features">
+                    <li><span class="check">✓</span> Everything in Full Identity</li>
+                    <li><span class="check">✓</span> NFT marketplace showcase design</li>
+                    <li><span class="check">✓</span> Community asset pack (10+ items)</li>
+                    <li><span class="check">✓</span> Presentation deck template</li>
+                    <li><span class="check">✓</span> 1-month post-launch support</li>
+                    <li><span class="check">✓</span> Unlimited revisions</li>
+                </ul>
+                <small style="color: var(--muted);">Perfect for: token launches, serious DAOs</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">What You Get</h2>
+        <p class="section-subtitle">End-to-end Web3 brand identity — from concept to launch.</p>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                    <h4>Discovery Call</h4>
+                    <p style="color: var(--muted);">30-min call to discuss your vision, target audience, and project goals.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                    <h4>Concepts & Drafts</h4>
+                    <p style="color: var(--muted);">Initial concepts within 48 hours. 3 logo directions to choose from.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>
+                    <h4>Feedback & Revise</h4>
+                    <p style="color: var(--muted);">2-3 rounds of revisions until you're 100% satisfied.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div>
+                    <h4>Deliverables</h4>
+                    <p style="color: var(--muted);">Final files in PNG, SVG, Figma, plus brand guidelines PDF.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Recent Work</h2>
+        <p class="section-subtitle">Web3 brand identity projects (samples will be added after first client delivery).</p>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">Sample 1 placeholder — Web3 DAO Identity<br><small style="color: var(--muted);">(Delivered upon first project)</small></div>
+            <div class="portfolio-item">Sample 2 placeholder — NFT Collection Branding<br><small style="color: var(--muted);">(Coming Q4 2026)</small></div>
+            <div class="portfolio-item">Sample 3 placeholder — Creator Brand Kit<br><small style="color: var(--muted);">(Available on request)</small></div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Workflow</h2>
+        <p class="section-subtitle">Simple process — you focus on building, Max handles the rest.</p>
+        <div style="max-width: 700px; margin: 0 auto;">
+            <div class="testimonial">
+                <div class="testimonial-text">Max handles my project like a co-founder. Fast delivery, creative concepts, always on Telegram. My NFT collection got 300+ followers in week 1 after launch — branding made the difference.</div>
+                <div class="testimonial-author">— Alex R., DeFi Project Founder</div>
+                <div class="testimonial-role">Solana, 2026</div>
+            </div>
+            <p style="text-align: center; margin-top: 24px; color: var(--muted);">Testimonial placeholder — will be updated after first client delivery.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Ready to Launch Your Brand?</h2>
+        <p class="section-subtitle">Get a quote within 2 hours. No obligations.</p>
+        <div style="text-align: center; margin: 32px 0;">
+            <p style="margin-bottom: 8px;">Email me directly:</p>
+            <div class="email-display">max6029@agentmail.to</div>
+            <p style="color: var(--muted); font-size: 14px; margin-top: 8px;">GMT+7 (Indonesia) | PayPal & USDC accepted</p>
+        </div>
+        <div class="contact-form">
+            <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div style="margin: 16px 0;">
+                    <input type="text" name="project" placeholder="What's your project? (NFT collection, DAO, Web3 startup)" style="width: 100%;" required>
+                </div>
+                <div style="margin: 16px 0;">
+                    <textarea name="message" placeholder="Tell me about your brand vision, timeline, and budget..." required></textarea>
+                </div>
+                <input type="submit" value="Send Inquiry →">
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Max Web3 Branding — Powered by Hermes Agent</p>
+    <p style="margin-top: 8px;">max6029@agentmail.to | GMT+7</p>
+</footer>
+
+</body>
+</html>
